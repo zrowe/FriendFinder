@@ -47,7 +47,7 @@ From this screen you can:
 
 #### Taking the Survey
 
-To start your survey, press the ![go to survey button](screenshots/GoToSurvey.png "Button") which will send the user to a questionaire with 10 simple questions.
+To start your survey, press ![go to survey button](screenshots/GoToSurvey.png "Button") which will send the user to a questionaire with 10 simple questions.
 
 The user is presented with 10 characteristics assertions.  For each assertion, the user choses to agree or disagree with the assertion.  The user is also asked for his or her name as well as the path to an image of the user.  
 
