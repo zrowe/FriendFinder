@@ -1,6 +1,7 @@
 # Friend Finder
 
-A Node.js &amp; MySQL based Marketplace.  This cli application presents items of an inventory for purchase by a customer.  It includes a 'Manager' tool to update inventory and add additional products.
+A Node.js - based matching application intended to run on Heroku.  
+
 
 ## Getting Started
 
@@ -44,43 +45,18 @@ From this screen you can:
 1. See the raw list of recorded 'friends' in the database by clicking on the API Friends List hyperlink, or;
 1. See the repo by clicking on the GitHub Repo hyperlink.
 
-#### Take the Survey
+#### Taking the Survey
 
-To start your survey, press the !screenshots/GoToSurvey.png "Button" which will send the user to a questionaire with 10 simple questions.
+To start your survey, press the ![go to survey button](screenshots/gotosurvey.png "Button") which will send the user to a questionaire with 10 simple questions.
 
-The user is presented with the list of current products.  Using the product ID, the customer may select a product to purchase and is then asked for a quantity.  The transaction is processed and the amount of the sale presented.  
+The user is presented with 10 characteristics assertions.  For each assertion, the user choses to agree or disagree with the assertion.  The user is also asked for his or her name as well as the path to an image of the user.  
 
-This cycle iterates until the customer chooses to leave the application by entering a "Q" at any prompt.  
+Upon completion, the user may press the Submit button at the bottom of the survey. 
 
-![Customer Demonstration](screenshots/customer.gif "The Customer's View")
+#### Results
 
+Upon pressing Submit, our Friend Finder compares the user's selections with thos of others who have submitted their surveys.  The one on file that most closely matches the user's choices is presented to the user.
 
-#### Manager View
-
-Usage is `node bamazonManager.js`
-
-The user is presented with a menu of command options:
-
-```
-? What would you like to do?? (Use arrow keys)
-> View Products for Sale
-  View Low Inventory
-  Add to Inventory
-  Add new Product
-  Quit
-```
-
-* **View Products for Sale** displays the list of all products
-* **View Low Inventory** displays only those products that have fewer than 5 usints remaining in inventory.
-* **Add to Inventory** allows the user to enter a quantity to **add** to the current inventory. 
-* **Add new Product** allows the user to add a new product to the inventory by entering a product name, department, quantity, and price.
-
-Note that only existing departments can be selected.  TO add departments, one needs to update the departments table via a different application.
-
-Upon completing a transaction, the application returns to the main menu and iterates until the user quits the application.
-
-
-![Manager Demonstration](screenshots/manager.gif "The Manager's View")
 
 ## Authors
 
