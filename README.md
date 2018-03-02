@@ -36,7 +36,7 @@ Launch a browser (preferably, Chrome) and direct it to your server and port (by 
 
 The user is greeted by the welcome screen:
 
-![Welcome Screen](screenshots/welcome.png "Welcome Screen")
+![Welcome Screen](screenshots/Welcome.png "Welcome Screen")
 
 From this screen you can:
 
